@@ -6,7 +6,7 @@ const server = express()
 server.use(express.json())
 
 server.get('/api/*', (req, res) => {
-    resizeBy.json({
+    res.json({
         cohort: 'Web 41',
     })
 })
